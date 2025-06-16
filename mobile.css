@@ -24,7 +24,32 @@
 
 /* -------------------------------------------------------------------------- */
         /* <!-- -----------Journey Of Our Learners--------------- --> */
+.card {
+  width: 300px; /* default for large screens */
+}
 
+/* Adjust width for smaller screens */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* full width with margin */
+    margin: 0 10px;
+  }
+   .carousel-nav {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .arrow-btn {
+    width: auto;
+    height: auto;
+    background: none;
+    color: orange;
+    font-size: 22px;
+    border: none;
+  }
+}
 
 
 
@@ -59,10 +84,48 @@
 
         /* <!-- ----------Our Students Review-------------- --> */
 
+        
+ @media (max-width: 768px) {
+      .carousel3d {
+        height: 340px;
+      }
+      .carousel3d-slide img {
+        width: 190px;
+      }
+      .carousel3d-controls {
+        margin: 16px 0;
+        gap: 12px;
+      }
+      .nav {
+        font-size: 20px;
+        padding: 4px 10px;
+      }
+      .carousel3d-dots .dot {
+        width: 10px;
+        height: 10px;
+      }
+    }
 
-
-
-
+    @media (max-width: 480px) {
+      .carousel3d {
+        height: 280px;
+      }
+      .carousel3d-slide img {
+        width: 150px;
+      }
+      .carousel3d-controls {
+        margin: 14px 0;
+        gap: 10px;
+      }
+      .nav {
+        font-size: 18px;
+        padding: 4px 8px;
+      }
+      .carousel3d-dots .dot {
+        width: 8px;
+        height: 8px;
+      }
+    }
 
 /* --------------------------------------------------------------------------------- */
 
