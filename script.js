@@ -158,6 +158,8 @@ window.addEventListener('resize', () => {
 //         /* <!-- -----------Placement Companies----------- --> */
 
 
+const trackCompany = document.getElementById('marquee-track');
+trackCompany.innerHTML += trackCompany.innerHTML;
 
 
 
